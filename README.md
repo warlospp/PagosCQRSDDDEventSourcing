@@ -10,10 +10,8 @@ La solución está estructurada en capas independientes por responsabilidad:
 
 - **Pagos.Domain**: contiene entidades, value objects y agregados de dominio.
 - **Pagos.Application**: contiene los casos de uso (comandos y queries), interfaces de repositorio y lógica de negocio.
-- **Pagos.Infrastructure**: contiene la implementación de persistencia en SQL Server y la publicación de eventos en Kafka.
-- **Pagos.Infrastructure.NoSQL**: contiene la implementación de lectura desde MongoDB.
+- **Pagos.Infrastructure**: contiene la implementación de persistencia en SQL Server, la publicación de eventos en Kafkay contiene la implementación de lectura desde MongoDB.
 - **Pagos.API**: expone los endpoints HTTP para recibir comandos y ejecutar queries.
-- **Pagos.Shared**: contiene modelos compartidos, contratos de mensajes, excepciones comunes, etc.
 
 ---
 
